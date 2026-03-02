@@ -1,0 +1,304 @@
+// §©§Ñ§Õ§Ñ§ß§Ú§Ö 1. §¬§Ý§Ñ§ã§ã ?§¹§Ö§Ý§à§Ó§Ö§Ü?
+console.log("=== §©§Ñ§Õ§Ñ§ß§Ú§Ö 1: §¹§Ö§Ý§à§Ó§Ö§Ü ===");
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    introduce() {
+        console.log(`§±§â§Ú§Ó§Ö§ä, §ñ ${this.name}, §Þ§ß§Ö ${this.age} §Ý§Ö§ä.`);
+    }
+}
+
+const person1 = new Person("§¡§ß§ß§Ñ", 25);
+const person2 = new Person("§ª§Ó§Ñ§ß", 30);
+person1.introduce();
+person2.introduce();
+
+// §©§Ñ§Õ§Ñ§ß§Ú§Ö 2. §¬§Ý§Ñ§ã§ã ?§±§â§ñ§Þ§à§å§Ô§à§Ý§î§ß§Ú§Ü?
+console.log("\n=== §©§Ñ§Õ§Ñ§ß§Ú§Ö 2: §±§â§ñ§Þ§à§å§Ô§à§Ý§î§ß§Ú§Ü ===");
+class Rectangle {
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    getArea() {
+        return this.width * this.height;
+    }
+
+    getPerimeter() {
+        return 2 * (this.width + this.height);
+    }
+}
+
+const rect = new Rectangle(5, 10);
+console.log(`§±§Ý§à§ë§Ñ§Õ§î: ${rect.getArea()}`);
+console.log(`§±§Ö§â§Ú§Þ§Ö§ä§â: ${rect.getPerimeter()}`);
+
+// §©§Ñ§Õ§Ñ§ß§Ú§Ö 3. §¬§Ý§Ñ§ã§ã ?§³§é§×§ä§é§Ú§Ü?
+console.log("\n=== §©§Ñ§Õ§Ñ§ß§Ú§Ö 3: §³§é§×§ä§é§Ú§Ü ===");
+class Counter {
+    constructor() {
+        this.count = 0;
+    }
+
+    increment() {
+        this.count++;
+    }
+
+    decrement() {
+        this.count--;
+    }
+
+    getValue() {
+        return this.count;
+    }
+}
+
+const counter = new Counter();
+counter.increment();
+counter.increment();
+counter.increment();
+counter.decrement();
+console.log(`§´§Ö§Ü§å§ë§Ö§Ö §Ù§ß§Ñ§é§Ö§ß§Ú§Ö §ã§é§×§ä§é§Ú§Ü§Ñ: ${counter.getValue()}`);
+
+
+// §©§Ñ§Õ§Ñ§ß§Ú§Ö 4. §¬§Ý§Ñ§ã§ã ?§¬§ß§Ú§Ô§Ñ?
+
+console.log("\n=== §©§Ñ§Õ§Ñ§ß§Ú§Ö 4: §¬§ß§Ú§Ô§Ñ ===");
+class Book {
+    constructor(title, author, year) {
+        this.title = title;
+        this.author = author;
+        this.year = year;
+    }
+
+    getInfo() {
+        return `${this.title} (${this.year}) ? ${this.author}`;
+    }
+}
+
+const book1 = new Book("§£§à§Û§ß§Ñ §Ú §Þ§Ú§â", "§­§Ö§Ó §´§à§Ý§ã§ä§à§Û", 1869);
+const book2 = new Book("§±§â§Ö§ã§ä§å§á§Ý§Ö§ß§Ú§Ö §Ú §ß§Ñ§Ü§Ñ§Ù§Ñ§ß§Ú§Ö", "§¶§×§Õ§à§â §¥§à§ã§ä§à§Ö§Ó§ã§Ü§Ú§Û", 1866);
+const book3 = new Book("§®§Ñ§ã§ä§Ö§â §Ú §®§Ñ§â§Ô§Ñ§â§Ú§ä§Ñ", "§®§Ú§ç§Ñ§Ú§Ý §¢§å§Ý§Ô§Ñ§Ü§à§Ó", 1967);
+
+console.log(book1.getInfo());
+console.log(book2.getInfo());
+console.log(book3.getInfo());
+
+
+// §©§Ñ§Õ§Ñ§ß§Ú§Ö 5. §¬§Ý§Ñ§ã§ã ?§´§Ñ§Û§Þ§Ö§â §à§Ò§â§Ñ§ä§ß§à§Ô§à §à§ä§ã§é§×§ä§Ñ?
+
+console.log("\n=== §©§Ñ§Õ§Ñ§ß§Ú§Ö 5: §´§Ñ§Û§Þ§Ö§â §à§Ò§â§Ñ§ä§ß§à§Ô§à §à§ä§ã§é§×§ä§Ñ ===");
+class CountdownTimer {
+    constructor(seconds) {
+        this.seconds = seconds;
+        this.intervalId = null;
+    }
+
+    start() {
+        console.log(`§´§Ñ§Û§Þ§Ö§â §Ù§Ñ§á§å§ë§Ö§ß §ß§Ñ ${this.seconds} §ã§Ö§Ü§å§ß§Õ:`);
+        this.intervalId = setInterval(() => {
+            console.log(this.seconds);
+            this.seconds--;
+
+            if (this.seconds < 0) {
+                console.log("§£§â§Ö§Þ§ñ §Ó§í§ê§Ý§à!");
+                clearInterval(this.intervalId);
+                this.intervalId = null;
+            }
+        }, 1000);
+    }
+
+    reset(newSeconds) {
+        // §°§ã§ä§Ñ§ß§Ñ§Ó§Ý§Ú§Ó§Ñ§Ö§Þ §ã§ä§Ñ§â§í§Û §ä§Ñ§Û§Þ§Ö§â, §Ö§ã§Ý§Ú §à§ß §Ö§ë§× §â§Ñ§Ò§à§ä§Ñ§Ö§ä
+        if (this.intervalId !== null) {
+            clearInterval(this.intervalId);
+            this.intervalId = null;
+        }
+        this.seconds = newSeconds;
+        console.log(`§´§Ñ§Û§Þ§Ö§â §ã§Ò§â§à§ê§Ö§ß. §¯§à§Ó§à§Ö §Ù§ß§Ñ§é§Ö§ß§Ú§Ö: ${this.seconds} §ã§Ö§Ü§å§ß§Õ.`);
+    }
+}
+
+// §³§à§Ù§Õ§Ñ§×§Þ §ä§Ñ§Û§Þ§Ö§â §ß§Ñ 5 §ã§Ö§Ü§å§ß§Õ §Ú §Ù§Ñ§á§å§ã§Ü§Ñ§Ö§Þ
+const timer = new CountdownTimer(5);
+timer.start();
+
+setTimeout(() => timer.reset(3), 3000);
+
+
+// §©§Ñ§Õ§Ñ§ß§Ú§Ö 6. §¬§Ý§Ñ§ã§ã ?§¬§à§â§Ù§Ú§ß§Ñ §á§à§Ü§å§á§à§Ü?
+
+console.log("\n=== §©§Ñ§Õ§Ñ§ß§Ú§Ö 6: §¬§à§â§Ù§Ú§ß§Ñ §á§à§Ü§å§á§à§Ü ===");
+class ShoppingCart {
+    constructor() {
+        this.items = [];
+    }
+
+    addItem(item) {
+        this.items.push(item);
+        console.log(`§¥§à§Ò§Ñ§Ó§Ý§Ö§ß §ä§à§Ó§Ñ§â: ${item}`);
+    }
+
+    removeItem(item) {
+        const index = this.items.indexOf(item);
+        if (index > -1) {
+            this.items.splice(index, 1);
+            console.log(`§µ§Õ§Ñ§Ý§×§ß §ä§à§Ó§Ñ§â: ${item}`);
+        } else {
+            console.log(`§´§à§Ó§Ñ§â "${item}" §ß§Ö §ß§Ñ§Û§Õ§Ö§ß §Ó §Ü§à§â§Ù§Ú§ß§Ö.`);
+        }
+    }
+
+    getTotalItems() {
+        return this.items.length;
+    }
+
+    showItems() {
+        console.log("§³§á§Ú§ã§à§Ü §ä§à§Ó§Ñ§â§à§Ó §Ó §Ü§à§â§Ù§Ú§ß§Ö:", this.items);
+    }
+}
+
+const cart = new ShoppingCart();
+cart.addItem("§Á§Ò§Ý§à§Ü§à");
+cart.addItem("§·§Ý§Ö§Ò");
+cart.addItem("§®§à§Ý§à§Ü§à");
+cart.showItems();
+cart.removeItem("§·§Ý§Ö§Ò");
+console.log(`§°§Ò§ë§Ö§Ö §Ü§à§Ý§Ú§é§Ö§ã§ä§Ó§à §ä§à§Ó§Ñ§â§à§Ó: ${cart.getTotalItems()}`);
+cart.showItems();
+
+
+// §©§Ñ§Õ§Ñ§ß§Ú§Ö 7. §¬§Ý§Ñ§ã§ã ?§±§Ñ§â§à§Ý§î?
+
+console.log("\n=== §©§Ñ§Õ§Ñ§ß§Ú§Ö 7: §±§Ñ§â§à§Ý§î ===");
+class Password {
+    constructor(value) {
+        this.value = value;
+    }
+
+    isValid() {
+        return this.value.length >= 8;
+    }
+
+    mask() {
+        if (this.value.length <= 3) {
+            return this.value;
+        }
+        const firstThree = this.value.slice(0, 3);
+        const maskedPart = '*'.repeat(this.value.length - 3);
+        return firstThree + maskedPart;
+    }
+}
+
+const pass1 = new Password("pass1234");
+const pass2 = new Password("hi");
+console.log(`§±§Ñ§â§à§Ý§î: ${pass1.value}, §Ó§Ñ§Ý§Ú§Õ§ß§í§Û: ${pass1.isValid()}, §Þ§Ñ§ã§Ü§Ñ: ${pass1.mask()}`);
+console.log(`§±§Ñ§â§à§Ý§î: ${pass2.value}, §Ó§Ñ§Ý§Ú§Õ§ß§í§Û: ${pass2.isValid()}, §Þ§Ñ§ã§Ü§Ñ: ${pass2.mask()}`);
+
+
+// §©§Ñ§Õ§Ñ§ß§Ú§Ö 8. §¬§Ý§Ñ§ã§ã ?§¬§Ñ§Ý§Ö§ß§Õ§Ñ§â§î?
+
+console.log("\n=== §©§Ñ§Õ§Ñ§ß§Ú§Ö 8: §¬§Ñ§Ý§Ö§ß§Õ§Ñ§â§î ===");
+class SimpleCalendar {
+    constructor(day, month, year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+    }
+
+    _pad(number) {
+        return number < 10 ? '0' + number : number;
+    }
+
+    getDateString() {
+        return `${this._pad(this.day)}.${this._pad(this.month)}.${this.year}`;
+    }
+}
+
+const date1 = new SimpleCalendar(5, 3, 2024);
+const date2 = new SimpleCalendar(15, 12, 1990);
+console.log(date1.getDateString());
+console.log(date2.getDateString());
+
+
+// §©§Ñ§Õ§Ñ§ß§Ú§Ö 9. §¬§Ý§Ñ§ã§ã ?§¬§Ñ§Ý§î§Ü§å§Ý§ñ§ä§à§â?
+
+console.log("\n=== §©§Ñ§Õ§Ñ§ß§Ú§Ö 9: §¬§Ñ§Ý§î§Ü§å§Ý§ñ§ä§à§â ===");
+class Calculator {
+    calculate(a, b, operation) {
+        switch (operation) {
+            case '+':
+                return a + b;
+            case '-':
+                return a - b;
+            case '*':
+                return a * b;
+            case '/':
+                if (b === 0) {
+                    console.log("§°§ê§Ú§Ò§Ü§Ñ: §Õ§Ö§Ý§Ö§ß§Ú§Ö §ß§Ñ §ß§à§Ý§î!");
+                    return null;
+                }
+                return a / b;
+            default:
+                console.log(`§°§ê§Ú§Ò§Ü§Ñ: §à§á§Ö§â§Ñ§è§Ú§ñ "${operation}" §ß§Ö §á§à§Õ§Õ§Ö§â§Ø§Ú§Ó§Ñ§Ö§ä§ã§ñ.`);
+                return null;
+        }
+    }
+}
+
+const calc = new Calculator();
+console.log(`5 + 3 = ${calc.calculate(5, 3, '+')}`);
+console.log(`10 - 4 = ${calc.calculate(10, 4, '-')}`);
+console.log(`7 * 6 = ${calc.calculate(7, 6, '*')}`);
+console.log(`20 / 5 = ${calc.calculate(20, 5, '/')}`);
+console.log(`20 / 0 = ${calc.calculate(20, 0, '/')}`);
+console.log(`5 % 2 = ${calc.calculate(5, 2, '%')}`);
+
+
+// §©§Ñ§Õ§Ñ§ß§Ú§Ö 10. §¬§Ý§Ñ§ã§ã ?§ª§Ô§â§à§Ü?
+
+console.log("\n=== §©§Ñ§Õ§Ñ§ß§Ú§Ö 10: §ª§Ô§â§à§Ü ===");
+class Player {
+    constructor(name) {
+        this.name = name;
+        this.health = 100;
+        this.level = 1;
+    }
+
+    takeDamage(amount) {
+        this.health -= amount;
+        if (this.health < 0) {
+            this.health = 0;
+        }
+        console.log(`${this.name} §á§à§Ý§å§é§Ú§Ý ${amount} §å§â§à§ß§Ñ. §©§Õ§à§â§à§Ó§î§Ö: ${this.health}`);
+    }
+
+    heal(amount) {
+        this.health += amount;
+        if (this.health > 100) {
+            this.health = 100;
+        }
+        console.log(`${this.name} §Ó§í§Ý§Ö§é§Ú§Ý ${amount} HP. §©§Õ§à§â§à§Ó§î§Ö: ${this.health}`);
+    }
+
+    levelUp() {
+        this.level++;
+        console.log(`${this.name} §á§à§Ó§í§ã§Ú§Ý §å§â§à§Ó§Ö§ß§î! §´§Ö§Ü§å§ë§Ú§Û §å§â§à§Ó§Ö§ß§î: ${this.level}`);
+    }
+
+    showStatus() {
+        console.log(`§ª§Ô§â§à§Ü: ${this.name}, §µ§â§à§Ó§Ö§ß§î: ${this.level}, §©§Õ§à§â§à§Ó§î§Ö: ${this.health}`);
+    }
+}
+
+const player = new Player("§¡§â§ä§å§â");
+player.showStatus();
+player.takeDamage(30);
+player.takeDamage(80);
+player.heal(50);
+player.levelUp();
+player.showStatus();
