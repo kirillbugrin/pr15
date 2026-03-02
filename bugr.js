@@ -1,5 +1,5 @@
-// ß©ß—ß’ß—ßﬂß⁄ß÷ 1. ß¨ß›ß—ß„ß„ ?ßπß÷ß›ß‡ß”ß÷ß‹?
-console.log("=== ß©ß—ß’ß—ßﬂß⁄ß÷ 1: ßπß÷ß›ß‡ß”ß÷ß‹ ===");
+// –ó–∞–¥–∞–Ω–∏–µ 1. –ö–ª–∞—Å—Å –ü—Ä–∏–≤–µ—Ç—Å—Ç–≤–∏–µ
+console.log("=== –ó–∞–¥–∞–Ω–∏–µ 1: –ü—Ä–∏–≤–µ—Ç—Å—Ç–≤–∏–µ ===");
 class Person {
     constructor(name, age) {
         this.name = name;
@@ -7,17 +7,17 @@ class Person {
     }
 
     introduce() {
-        console.log(`ß±ß‚ß⁄ß”ß÷ß‰, ßÒ ${this.name}, ßﬁßﬂß÷ ${this.age} ß›ß÷ß‰.`);
+        console.log(`–ü—Ä–∏–≤–µ—Ç, —è ${this.name}, –º–Ω–µ ${this.age} –ª–µ—Ç.`);
     }
 }
 
-const person1 = new Person("ß°ßﬂßﬂß—", 25);
-const person2 = new Person("ß™ß”ß—ßﬂ", 30);
+const person1 = new Person("–ê–Ω–Ω–∞", 25);
+const person2 = new Person("–ú–∞–∫—Å", 30);
 person1.introduce();
 person2.introduce();
 
-// ß©ß—ß’ß—ßﬂß⁄ß÷ 2. ß¨ß›ß—ß„ß„ ?ß±ß‚ßÒßﬁß‡ßÂß‘ß‡ß›ßÓßﬂß⁄ß‹?
-console.log("\n=== ß©ß—ß’ß—ßﬂß⁄ß÷ 2: ß±ß‚ßÒßﬁß‡ßÂß‘ß‡ß›ßÓßﬂß⁄ß‹ ===");
+// –ó–∞–¥–∞–Ω–∏–µ 2. –ö–ª–∞—Å—Å –ü—Ä—è–º–æ—É–≥–æ–ª—å–Ω–∏–∫
+console.log("\n=== –ó–∞–¥–∞–Ω–∏–µ 2: –ü—Ä—è–º–æ—É–≥–æ–ª—å–Ω–∏–∫ ===");
 class Rectangle {
     constructor(width, height) {
         this.width = width;
@@ -34,11 +34,11 @@ class Rectangle {
 }
 
 const rect = new Rectangle(5, 10);
-console.log(`ß±ß›ß‡ßÎß—ß’ßÓ: ${rect.getArea()}`);
-console.log(`ß±ß÷ß‚ß⁄ßﬁß÷ß‰ß‚: ${rect.getPerimeter()}`);
+console.log(`–ü–ª–æ—â–∞–¥—å: ${rect.getArea()}`);
+console.log(`–ü–µ—Ä–∏–º–µ—Ç—Ä: ${rect.getPerimeter()}`);
 
-// ß©ß—ß’ß—ßﬂß⁄ß÷ 3. ß¨ß›ß—ß„ß„ ?ß≥ßÈß◊ß‰ßÈß⁄ß‹?
-console.log("\n=== ß©ß—ß’ß—ßﬂß⁄ß÷ 3: ß≥ßÈß◊ß‰ßÈß⁄ß‹ ===");
+// –ó–∞–¥–∞–Ω–∏–µ 3. –ö–ª–∞—Å—Å –°—á–µ—Ç—á–∏–∫
+console.log("\n=== –ó–∞–¥–∞–Ω–∏–µ 3: –°—á–µ—Ç—á–∏–∫ ===");
 class Counter {
     constructor() {
         this.count = 0;
@@ -62,12 +62,11 @@ counter.increment();
 counter.increment();
 counter.increment();
 counter.decrement();
-console.log(`ß¥ß÷ß‹ßÂßÎß÷ß÷ ßŸßﬂß—ßÈß÷ßﬂß⁄ß÷ ß„ßÈß◊ß‰ßÈß⁄ß‹ß—: ${counter.getValue()}`);
+console.log(`–¢–µ–∫—É—â–µ–µ –∑–Ω–∞—á–µ–Ω–∏–µ —Å—á–µ—Ç—á–∏–∫–∞: ${counter.getValue()}`);
 
 
-// ß©ß—ß’ß—ßﬂß⁄ß÷ 4. ß¨ß›ß—ß„ß„ ?ß¨ßﬂß⁄ß‘ß—?
-
-console.log("\n=== ß©ß—ß’ß—ßﬂß⁄ß÷ 4: ß¨ßﬂß⁄ß‘ß— ===");
+// –ó–∞–¥–∞–Ω–∏–µ 4. –ö–ª–∞—Å—Å –ö–Ω–∏–≥–∞
+console.log("\n=== –ó–∞–¥–∞–Ω–∏–µ 4: –ö–Ω–∏–≥–∞ ===");
 class Book {
     constructor(title, author, year) {
         this.title = title;
@@ -76,22 +75,21 @@ class Book {
     }
 
     getInfo() {
-        return `${this.title} (${this.year}) ? ${this.author}`;
+        return `${ this.title } (${ this.year }) - ${ this.author }`;
     }
 }
 
-const book1 = new Book("ß£ß‡ß€ßﬂß— ß⁄ ßﬁß⁄ß‚", "ß≠ß÷ß” ß¥ß‡ß›ß„ß‰ß‡ß€", 1869);
-const book2 = new Book("ß±ß‚ß÷ß„ß‰ßÂß·ß›ß÷ßﬂß⁄ß÷ ß⁄ ßﬂß—ß‹ß—ßŸß—ßﬂß⁄ß÷", "ß∂ß◊ß’ß‡ß‚ ß•ß‡ß„ß‰ß‡ß÷ß”ß„ß‹ß⁄ß€", 1866);
-const book3 = new Book("ßÆß—ß„ß‰ß÷ß‚ ß⁄ ßÆß—ß‚ß‘ß—ß‚ß⁄ß‰ß—", "ßÆß⁄ßÁß—ß⁄ß› ß¢ßÂß›ß‘ß—ß‹ß‡ß”", 1967);
+const book1 = new Book("–ê–Ω–Ω–∞ –ö–∞—Ä–µ–Ω–∏–Ω–∞", "–õ–µ–≤ –¢–æ–ª—Å—Ç–æ–π", 1869);
+const book2 = new Book("–ü—Ä–µ—Å—Ç—É–ø–ª–µ–Ω–∏–µ –∏ –Ω–∞–∫–∞–∑–∞–Ω–∏–µ", "–§–µ–¥–æ—Ä –î–æ—Å—Ç–æ–µ–≤—Å–∫–∏–π", 1866);
+const book3 = new Book("–ú–∞—Å—Ç–µ—Ä –∏ –ú–∞—Ä–≥–∞—Ä–∏—Ç–∞", "–ú–∏—Ö–∞–∏–ª –ë—É–ª–≥–∞–∫–æ–≤", 1967);
 
 console.log(book1.getInfo());
 console.log(book2.getInfo());
 console.log(book3.getInfo());
 
 
-// ß©ß—ß’ß—ßﬂß⁄ß÷ 5. ß¨ß›ß—ß„ß„ ?ß¥ß—ß€ßﬁß÷ß‚ ß‡ß“ß‚ß—ß‰ßﬂß‡ß‘ß‡ ß‡ß‰ß„ßÈß◊ß‰ß—?
-
-console.log("\n=== ß©ß—ß’ß—ßﬂß⁄ß÷ 5: ß¥ß—ß€ßﬁß÷ß‚ ß‡ß“ß‚ß—ß‰ßﬂß‡ß‘ß‡ ß‡ß‰ß„ßÈß◊ß‰ß— ===");
+// –ó–∞–¥–∞–Ω–∏–µ 5. –ö–ª–∞—Å—Å –¢–∞–π–º–µ—Ä –æ–±—Ä–∞—Ç–Ω–æ–≥–æ –æ—Ç—Å—á–µ—Ç–∞
+console.log("\n=== –ó–∞–¥–∞–Ω–∏–µ 5: –¢–∞–π–º–µ—Ä –æ–±—Ä–∞—Ç–Ω–æ–≥–æ –æ—Ç—Å—á–µ—Ç–∞ ===");
 class CountdownTimer {
     constructor(seconds) {
         this.seconds = seconds;
@@ -99,13 +97,13 @@ class CountdownTimer {
     }
 
     start() {
-        console.log(`ß¥ß—ß€ßﬁß÷ß‚ ßŸß—ß·ßÂßÎß÷ßﬂ ßﬂß— ${this.seconds} ß„ß÷ß‹ßÂßﬂß’:`);
+        console.log(`–¢–∞–π–º–µ—Ä –∑–∞–ø—É—â–µ–Ω –Ω–∞ ${this.seconds} —Å–µ–∫—É–Ω–¥:`);
         this.intervalId = setInterval(() => {
             console.log(this.seconds);
             this.seconds--;
 
             if (this.seconds < 0) {
-                console.log("ß£ß‚ß÷ßﬁßÒ ß”ßÌßÍß›ß‡!");
+                console.log("–í—Ä–µ–º—è –≤—ã—à–ª–æ!");
                 clearInterval(this.intervalId);
                 this.intervalId = null;
             }
@@ -113,26 +111,25 @@ class CountdownTimer {
     }
 
     reset(newSeconds) {
-        // ß∞ß„ß‰ß—ßﬂß—ß”ß›ß⁄ß”ß—ß÷ßﬁ ß„ß‰ß—ß‚ßÌß€ ß‰ß—ß€ßﬁß÷ß‚, ß÷ß„ß›ß⁄ ß‡ßﬂ ß÷ßÎß◊ ß‚ß—ß“ß‡ß‰ß—ß÷ß‰
+        // –û—Å—Ç–∞–Ω–∞–≤–ª–∏–≤–∞–µ–º —Å—Ç–∞—Ä—ã–π —Ç–∞–π–º–µ—Ä, –µ—Å–ª–∏ –æ–Ω –µ—â–µ —Ä–∞–±–æ—Ç–∞–µ—Ç
         if (this.intervalId !== null) {
             clearInterval(this.intervalId);
             this.intervalId = null;
         }
         this.seconds = newSeconds;
-        console.log(`ß¥ß—ß€ßﬁß÷ß‚ ß„ß“ß‚ß‡ßÍß÷ßﬂ. ßØß‡ß”ß‡ß÷ ßŸßﬂß—ßÈß÷ßﬂß⁄ß÷: ${this.seconds} ß„ß÷ß‹ßÂßﬂß’.`);
+        console.log(`–¢–∞–π–º–µ—Ä —Å–±—Ä–æ—à–µ–Ω. –ù–æ–≤–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ: ${this.seconds} —Å–µ–∫—É–Ω–¥.`);
     }
 }
 
-// ß≥ß‡ßŸß’ß—ß◊ßﬁ ß‰ß—ß€ßﬁß÷ß‚ ßﬂß— 5 ß„ß÷ß‹ßÂßﬂß’ ß⁄ ßŸß—ß·ßÂß„ß‹ß—ß÷ßﬁ
+// –°–æ–∑–¥–∞–µ–º —Ç–∞–π–º–µ—Ä –Ω–∞ 5 —Å–µ–∫—É–Ω–¥ –∏ –∑–∞–ø—É—Å–∫–∞–µ–º –µ–≥–æ
 const timer = new CountdownTimer(5);
 timer.start();
 
 setTimeout(() => timer.reset(3), 3000);
 
 
-// ß©ß—ß’ß—ßﬂß⁄ß÷ 6. ß¨ß›ß—ß„ß„ ?ß¨ß‡ß‚ßŸß⁄ßﬂß— ß·ß‡ß‹ßÂß·ß‡ß‹?
-
-console.log("\n=== ß©ß—ß’ß—ßﬂß⁄ß÷ 6: ß¨ß‡ß‚ßŸß⁄ßﬂß— ß·ß‡ß‹ßÂß·ß‡ß‹ ===");
+// –ó–∞–¥–∞–Ω–∏–µ 6. –ö–ª–∞—Å—Å –ö–æ—Ä–∑–∏–Ω–∞ –ø–æ–∫—É–ø–æ–∫
+console.log("\n=== –ó–∞–¥–∞–Ω–∏–µ 6: –ö–æ—Ä–∑–∏–Ω–∞ –ø–æ–∫—É–ø–æ–∫ ===");
 class ShoppingCart {
     constructor() {
         this.items = [];
@@ -140,16 +137,16 @@ class ShoppingCart {
 
     addItem(item) {
         this.items.push(item);
-        console.log(`ß•ß‡ß“ß—ß”ß›ß÷ßﬂ ß‰ß‡ß”ß—ß‚: ${item}`);
+        console.log(`–î–æ–±–∞–≤–ª–µ–Ω —Ç–æ–≤–∞—Ä: ${item}`);
     }
 
     removeItem(item) {
         const index = this.items.indexOf(item);
         if (index > -1) {
             this.items.splice(index, 1);
-            console.log(`ßµß’ß—ß›ß◊ßﬂ ß‰ß‡ß”ß—ß‚: ${item}`);
+            console.log(`–£–¥–∞–ª–µ–Ω —Ç–æ–≤–∞—Ä: ${item}`);
         } else {
-            console.log(`ß¥ß‡ß”ß—ß‚ "${item}" ßﬂß÷ ßﬂß—ß€ß’ß÷ßﬂ ß” ß‹ß‡ß‚ßŸß⁄ßﬂß÷.`);
+            console.log(`–¢–æ–≤–∞—Ä "${item}" –Ω–µ –Ω–∞–π–¥–µ–Ω –≤ –∫–æ—Ä–∑–∏–Ω–µ.`);
         }
     }
 
@@ -158,23 +155,22 @@ class ShoppingCart {
     }
 
     showItems() {
-        console.log("ß≥ß·ß⁄ß„ß‡ß‹ ß‰ß‡ß”ß—ß‚ß‡ß” ß” ß‹ß‡ß‚ßŸß⁄ßﬂß÷:", this.items);
+        console.log("–°–ø–∏—Å–æ–∫ —Ç–æ–≤–∞—Ä–æ–≤ –≤ –∫–æ—Ä–∑–∏–Ω–µ:", this.items);
     }
 }
 
 const cart = new ShoppingCart();
-cart.addItem("ß¡ß“ß›ß‡ß‹ß‡");
-cart.addItem("ß∑ß›ß÷ß“");
-cart.addItem("ßÆß‡ß›ß‡ß‹ß‡");
+cart.addItem("–Ø–±–ª–æ–∫–æ");
+cart.addItem("–•–ª–µ–±");
+cart.addItem("–ú–æ–ª–æ–∫–æ");
 cart.showItems();
-cart.removeItem("ß∑ß›ß÷ß“");
-console.log(`ß∞ß“ßÎß÷ß÷ ß‹ß‡ß›ß⁄ßÈß÷ß„ß‰ß”ß‡ ß‰ß‡ß”ß—ß‚ß‡ß”: ${cart.getTotalItems()}`);
+cart.removeItem("–•–ª–µ–±");
+console.log(`–û–±—â–µ–µ –∫–æ–ª–∏—á–µ—Å—Ç–≤–æ —Ç–æ–≤–∞—Ä–æ–≤: ${cart.getTotalItems()}`);
 cart.showItems();
 
 
-// ß©ß—ß’ß—ßﬂß⁄ß÷ 7. ß¨ß›ß—ß„ß„ ?ß±ß—ß‚ß‡ß›ßÓ?
-
-console.log("\n=== ß©ß—ß’ß—ßﬂß⁄ß÷ 7: ß±ß—ß‚ß‡ß›ßÓ ===");
+// –ó–∞–¥–∞–Ω–∏–µ 7. –ö–ª–∞—Å—Å –ü–∞—Ä–æ–ª—å
+console.log("\n=== –ó–∞–¥–∞–Ω–∏–µ 7: –ü–∞—Ä–æ–ª—å ===");
 class Password {
     constructor(value) {
         this.value = value;
@@ -196,13 +192,12 @@ class Password {
 
 const pass1 = new Password("pass1234");
 const pass2 = new Password("hi");
-console.log(`ß±ß—ß‚ß‡ß›ßÓ: ${pass1.value}, ß”ß—ß›ß⁄ß’ßﬂßÌß€: ${pass1.isValid()}, ßﬁß—ß„ß‹ß—: ${pass1.mask()}`);
-console.log(`ß±ß—ß‚ß‡ß›ßÓ: ${pass2.value}, ß”ß—ß›ß⁄ß’ßﬂßÌß€: ${pass2.isValid()}, ßﬁß—ß„ß‹ß—: ${pass2.mask()}`);
+console.log(`–ü–∞—Ä–æ–ª—å: ${pass1.value}, –≤–∞–ª–∏–¥–Ω—ã–π: ${pass1.isValid()}, –º–∞—Å–∫–∞: ${pass1.mask()}`);
+console.log(`–ü–∞—Ä–æ–ª—å: ${pass2.value}, –≤–∞–ª–∏–¥–Ω—ã–π: ${pass2.isValid()}, –º–∞—Å–∫–∞: ${pass2.mask()}`);
 
 
-// ß©ß—ß’ß—ßﬂß⁄ß÷ 8. ß¨ß›ß—ß„ß„ ?ß¨ß—ß›ß÷ßﬂß’ß—ß‚ßÓ?
-
-console.log("\n=== ß©ß—ß’ß—ßﬂß⁄ß÷ 8: ß¨ß—ß›ß÷ßﬂß’ß—ß‚ßÓ ===");
+// –ó–∞–¥–∞–Ω–∏–µ 8. –ö–ª–∞—Å—Å –ö–∞–ª–µ–Ω–¥–∞—Ä—å
+console.log("\n=== –ó–∞–¥–∞–Ω–∏–µ 8: –ö–∞–ª–µ–Ω–¥–∞—Ä—å ===");
 class SimpleCalendar {
     constructor(day, month, year) {
         this.day = day;
@@ -215,7 +210,7 @@ class SimpleCalendar {
     }
 
     getDateString() {
-        return `${this._pad(this.day)}.${this._pad(this.month)}.${this.year}`;
+        return `${ this._pad(this.day) }.${ this._pad(this.month) }.${ this.year }`;
     }
 }
 
@@ -225,9 +220,8 @@ console.log(date1.getDateString());
 console.log(date2.getDateString());
 
 
-// ß©ß—ß’ß—ßﬂß⁄ß÷ 9. ß¨ß›ß—ß„ß„ ?ß¨ß—ß›ßÓß‹ßÂß›ßÒß‰ß‡ß‚?
-
-console.log("\n=== ß©ß—ß’ß—ßﬂß⁄ß÷ 9: ß¨ß—ß›ßÓß‹ßÂß›ßÒß‰ß‡ß‚ ===");
+// –ó–∞–¥–∞–Ω–∏–µ 9. –ö–ª–∞—Å—Å –ö–∞–ª—å–∫—É–ª—è—Ç–æ—Ä
+console.log("\n=== –ó–∞–¥–∞–Ω–∏–µ 9: –ö–∞–ª—å–∫—É–ª—è—Ç–æ—Ä ===");
 class Calculator {
     calculate(a, b, operation) {
         switch (operation) {
@@ -239,12 +233,12 @@ class Calculator {
                 return a * b;
             case '/':
                 if (b === 0) {
-                    console.log("ß∞ßÍß⁄ß“ß‹ß—: ß’ß÷ß›ß÷ßﬂß⁄ß÷ ßﬂß— ßﬂß‡ß›ßÓ!");
+                    console.log("–û—à–∏–±–∫–∞: –¥–µ–ª–µ–Ω–∏–µ –Ω–∞ –Ω–æ–ª—å!");
                     return null;
                 }
                 return a / b;
             default:
-                console.log(`ß∞ßÍß⁄ß“ß‹ß—: ß‡ß·ß÷ß‚ß—ßËß⁄ßÒ "${operation}" ßﬂß÷ ß·ß‡ß’ß’ß÷ß‚ßÿß⁄ß”ß—ß÷ß‰ß„ßÒ.`);
+                console.log(`–û—à–∏–±–∫–∞: –æ–ø–µ—Ä–∞—Ü–∏—è "${operation}" –Ω–µ –ø–æ–¥–¥–µ—Ä–∂–∏–≤–∞–µ—Ç—Å—è.`);
                 return null;
         }
     }
@@ -259,9 +253,8 @@ console.log(`20 / 0 = ${calc.calculate(20, 0, '/')}`);
 console.log(`5 % 2 = ${calc.calculate(5, 2, '%')}`);
 
 
-// ß©ß—ß’ß—ßﬂß⁄ß÷ 10. ß¨ß›ß—ß„ß„ ?ß™ß‘ß‚ß‡ß‹?
-
-console.log("\n=== ß©ß—ß’ß—ßﬂß⁄ß÷ 10: ß™ß‘ß‚ß‡ß‹ ===");
+// –ó–∞–¥–∞–Ω–∏–µ 10. –ö–ª–∞—Å—Å –ò–≥—Ä–æ–∫
+console.log("\n=== –ó–∞–¥–∞–Ω–∏–µ 10: –ò–≥—Ä–æ–∫ ===");
 class Player {
     constructor(name) {
         this.name = name;
@@ -274,7 +267,7 @@ class Player {
         if (this.health < 0) {
             this.health = 0;
         }
-        console.log(`${this.name} ß·ß‡ß›ßÂßÈß⁄ß› ${amount} ßÂß‚ß‡ßﬂß—. ß©ß’ß‡ß‚ß‡ß”ßÓß÷: ${this.health}`);
+        console.log(`${this.name} –ø–æ–ª—É—á–∏–ª ${amount} —É—Ä–æ–Ω–∞. –ó–¥–æ—Ä–æ–≤—å–µ: ${this.health}`);
     }
 
     heal(amount) {
@@ -282,20 +275,20 @@ class Player {
         if (this.health > 100) {
             this.health = 100;
         }
-        console.log(`${this.name} ß”ßÌß›ß÷ßÈß⁄ß› ${amount} HP. ß©ß’ß‡ß‚ß‡ß”ßÓß÷: ${this.health}`);
+        console.log(`${this.name} –≤—ã–ª–µ—á–∏–ª ${amount} HP. –ó–¥–æ—Ä–æ–≤—å–µ: ${this.health}`);
     }
 
     levelUp() {
         this.level++;
-        console.log(`${this.name} ß·ß‡ß”ßÌß„ß⁄ß› ßÂß‚ß‡ß”ß÷ßﬂßÓ! ß¥ß÷ß‹ßÂßÎß⁄ß€ ßÂß‚ß‡ß”ß÷ßﬂßÓ: ${this.level}`);
+        console.log(`${this.name} –ø–æ–≤—ã—Å–∏–ª —É—Ä–æ–≤–µ–Ω—å! –¢–µ–∫—É—â–∏–π —É—Ä–æ–≤–µ–Ω—å: ${this.level}`);
     }
 
     showStatus() {
-        console.log(`ß™ß‘ß‚ß‡ß‹: ${this.name}, ßµß‚ß‡ß”ß÷ßﬂßÓ: ${this.level}, ß©ß’ß‡ß‚ß‡ß”ßÓß÷: ${this.health}`);
+        console.log(`–ò–≥—Ä–æ–∫: ${this.name}, –£—Ä–æ–≤–µ–Ω—å: ${this.level}, –ó–¥–æ—Ä–æ–≤—å–µ: ${this.health}`);
     }
 }
 
-const player = new Player("ß°ß‚ß‰ßÂß‚");
+const player = new Player("–ê—Ä—Ç—É—Ä");
 player.showStatus();
 player.takeDamage(30);
 player.takeDamage(80);
